@@ -2,9 +2,9 @@
 Use blocklist.de IPs in Apache Web-Server configuration to block bad IPs 
 
 ```
-1) Make a directory blockiplist in /etc/apache2 directory
+1) Make a directory blockiplist in /etc/apache2 directory and make it writable for user. 
 
-2) copy file ban_bad_ip.conf and cron_download_list.sh to this place
+2) Copy file ban_bad_ip.conf and cron_download_list.sh to this place. Make cron_download_list.sh executable. 
 
 3) Include the config in Apache2 main config:
   Include blockiplist/ban_bad_ip.conf
