@@ -7,7 +7,6 @@ Use blocklist.de IPs in Apache Web-Server configuration to block bad IPs
 2) copy file ban_bad_ip.conf and cron_download_list.sh to this place
 
 3) Include the config in Apache2 main config:
-  # Blocklist -> abweisen von Brute Forece Angriffen (48h Latenz)
   Include blockiplist/ban_bad_ip.conf
 
 4) Enable in cron for regulary updates:
